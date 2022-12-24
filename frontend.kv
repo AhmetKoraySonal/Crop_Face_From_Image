@@ -1,0 +1,89 @@
+
+<TextInput>:
+    height:91
+    width:300
+    size_hint_x: None
+    size_hint_y: None
+<Button>:
+    size_hint_x: None
+    height:90
+    size_hint_y: None
+    width:200
+
+<BoxLayout>:
+    size:100,90
+    size_hint_x: None
+    size_hint_y: None
+
+
+<FileChooser>:
+
+
+
+    BoxLayout:
+        orientation:'vertical'
+
+        BoxLayout:
+            TextInput:
+                id:user_query
+            Button:
+                text:'Select Min Neighbour'
+
+                on_press:root.select_min_neighbour()
+
+        BoxLayout:
+            TextInput:
+                id:user_query_1
+            Button:
+                text:'Select Scale Factor'
+                on_press:root.select_scale_factor()
+
+
+        BoxLayout:
+            TextInput:
+                id:user_query_2
+            Button:
+                text:'Select Size '
+                on_press:root.select_size()
+
+
+        BoxLayout:
+            TextInput:
+                id:user_query_3
+
+            Button:
+                text:'Select Folder '
+                on_press:root.take_folder()
+
+
+        BoxLayout:
+            TextInput:
+                id:user_query_4
+            Button:
+                text:'Save'
+                on_press:root.save_folder()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
